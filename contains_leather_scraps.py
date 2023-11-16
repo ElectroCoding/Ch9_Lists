@@ -2,34 +2,25 @@
 
 
 def contains_leather_scraps(items):
-    print(*items)
+
     found = False
+
     for leather in items:
+        
         if leather == "Leather Scraps":
-            found == True
-            print (f"The item is {leather}")
-            print (found)
-            print (f"=======================")
-            print ()
-
-
-    # don't touch above this line
-
-    '''for leather in items:
-        if leather == "Leather Scraps":
-            found == True
-    '''
-
-    # don't touch below this line
-
+            found = True
+           
+        else:
+            found = False
+           
     return found
 
 
-items  = ["Potion", "Leather Scraps", "Leather Scraps"]
+# items  = ["Potion", "Leather Scraps", "Leather Scraps"]
 
-found = contains_leather_scraps(items)
+# found = contains_leather_scraps(items)
 
-'''
+
 
 # from main import *
 
@@ -82,4 +73,3 @@ if "__RUN__" in globals():
     test_cases = run_cases
 
 main()
-'''
