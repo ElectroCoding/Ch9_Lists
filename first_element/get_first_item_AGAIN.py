@@ -2,20 +2,26 @@
 
 
 def get_first_item(items):
-    print(type(items))
-    print(f"ITEMS = {items[0]}")
-    x = items[0]
-    if x == 0:
+#    print(type(items))
+#    print(f"ITEMS = {items[0]}")
+    
+    if  len(items) == 0:
         result = "ERROR"
-        return items[0], result
-        
+        return result
     else:
         return items[0]
+    
+    
+#    x = len(items[0])
+#    if x == 0:
+#        result = "ERROR"
+#        return items[0], result
+        
 
 
 #   from main import *
 
-run_cases = [([1, 2], 1), (["Healing Potion"], "Healing Potion")]
+run_cases = [([3, 2], 3), (["Healing Potion"], "Healing Potion")]
 
 submit_cases = run_cases + [
     (["Iron Ore", "Iron Bar", "Scimitar"], "Iron Ore"),
