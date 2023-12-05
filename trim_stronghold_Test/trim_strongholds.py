@@ -4,12 +4,29 @@
 
 def trim_strongholds(strongholds):
 
+
+    del strongholds[0]
+    del strongholds[-2:]
+
+    return strongholds
+ 
+    '''
+
     print()
+    print(strongholds[:])
     
-    del trim_strongholds[:1]
+    del strongholds[0]
+    print(strongholds[:])
+    del strongholds[-1]
+    print(strongholds[:])
+    del strongholds[-1]
+    print(strongholds[:])
 
 
-#  from main import *
+from main import *
+
+
+'''
 
 run_cases = [
     (

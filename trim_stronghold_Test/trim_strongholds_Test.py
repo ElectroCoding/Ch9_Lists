@@ -7,8 +7,8 @@ def trim_strongholds(strongholds):
     print(f"original trim_strongholds is {len(strongholds)} {strongholds}")
     print()
 
-    del strongholds[:1]
-    del strongholds[:-2]
+    del strongholds[-1:2]
+   
 
     print(f"New trim_strongholds is {len(strongholds)} {strongholds}")
     print()
